@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "812344937271",
+    "project_id": "p-cart-207b8",
+    "storage_bucket": "p-cart-207b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812344937271:android:2e58639bc4924fc69168b2",
+        "android_client_info": {
+          "package_name": "com.prem.p_cart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812344937271-1h9tnc7vffqsug26v0h8v7hh6jr9if3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2MwgOQx4zMRSu16gBRkicXMGpAUFVC8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812344937271-1h9tnc7vffqsug26v0h8v7hh6jr9if3c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

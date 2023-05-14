@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/top"
+           android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_menu_AllCategories"
+            android:title="@string/all_categories"
+            android:icon="@drawable/icon_all_catagory" />
+
+    </group>
+
+    <group android:id="@+id/home_menu_language">
+        <item
+            android:id="@+id/language_menu_sbar"
+            android:title="@string/choose_language"
+            android:icon="@drawable/icon_language"/>
+    </group>
+
+    <group  android:id="@+id/hm_menu_bottom"
+            android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/offer_menu_sbar"
+            android:title="@string/offer_zone"
+            android:icon="@drawable/icon_discount"/>
+
+        <item
+            android:id="@+id/order_menu_sbar"
+            android:title="@string/my_order"
+            android:icon="@drawable/icon_my_order"/>
+
+        <item
+            android:id="@+id/coupon_menu_sbar"
+            android:title="@string/my_coupon"
+            android:icon="@drawable/icon_coupon"/>
+
+        <item
+            android:id="@+id/cart_menu_sbar"
+            android:title="@string/my_cart"
+            android:icon="@drawable/icon_fill_cart"/>
+
+        <item
+            android:id="@+id/account_menu_sbar"
+            android:title="@string/my_account"
+            android:icon="@drawable/icon_user"/>
+
+        <item
+            android:id="@+id/nortification_menu_sbar"
+            android:title="@string/my_nortification"
+            android:icon="@drawable/icon_nortification"/>
+
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/noti_prefences_menu_sbar"
+            android:title="@string/nortification_perfrences"/>
+
+        <item
+            android:id="@+id/helpCenter_menu_sbar"
+            android:title="@string/help_center"/>
+
+        <item
+            android:id="@+id/privacyPolicy_menu_sbar"
+            android:title="@string/privacy_policy"/>
+
+    </group>
+</menu>

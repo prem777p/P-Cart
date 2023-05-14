@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/SplashScreen"
+    tools:context=".Activities.initial_Screen.SplashScreen_Frag">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/font_rockbell"
+        android:text="@string/p_cart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_45ssp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/side_nev"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/side_nev"
+        app:layout_constraintTop_toTopOf="@+id/side_nev" />
+
+    <ImageView
+        android:id="@+id/side_nev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_logo_splashscreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

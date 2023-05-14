@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Home_Screen.Side_Nev_Home_Activity"
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="start">
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/startingProgressBar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/changeLayout_iv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+    <include
+        android:id="@+id/hm_layout"
+        layout="@layout/fragment_home_frag"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fmLayout_sbr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView_hm"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/header_hm_navigation_bar"
+        app:menu="@menu/home_nevigation_menu"
+        android:layout_gravity="start" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

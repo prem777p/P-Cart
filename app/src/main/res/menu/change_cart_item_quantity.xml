@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/increaseQuantity_2"
+        android:title="@string/_2"/>
+
+    <item
+        android:id="@+id/increaseQuantity_3"
+        android:title="@string/_3"/>
+    <item
+        android:id="@+id/increaseQuantity_4"
+        android:title="@string/_4"/>
+
+    <item
+        android:id="@+id/increaseQuantity_MoreQuantity"
+        android:title="@string/more_quantity"/>
+</menu>

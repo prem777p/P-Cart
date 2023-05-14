@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Home_Screen.Home_frag">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clayout_home_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/ctm_home_clayout"
+        android:elevation="@dimen/_25sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/side_nev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_side_nevbar"
+            app:layout_constraintBottom_toBottomOf="@+id/app_name"
+            app:layout_constraintStart_toStartOf="@+id/searchView_home"
+            app:layout_constraintTop_toTopOf="@+id/app_name"
+            android:contentDescription="@string/open_drawer" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_sitkaa"
+            android:text="@string/p_cart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25ssp"
+            app:layout_constraintBottom_toTopOf="@+id/searchView_home"
+            app:layout_constraintEnd_toStartOf="@+id/nortification_btn"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toEndOf="@+id/side_nev"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.22000003" />
+
+        <ImageView
+            android:id="@+id/nortification_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/nortification_perfrences"
+            android:src="@drawable/icon_notifications_bell"
+            app:layout_constraintBottom_toBottomOf="@+id/cart_btn"
+            app:layout_constraintEnd_toEndOf="@+id/searchView_home"
+            app:layout_constraintTop_toTopOf="@+id/cart_btn" />
+
+        <ImageView
+            android:id="@+id/cart_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cart"
+            android:src="@drawable/icon_shopping_cart"
+            app:layout_constraintBottom_toBottomOf="@+id/app_name"
+            app:layout_constraintEnd_toStartOf="@+id/nortification_btn"
+            app:layout_constraintHorizontal_bias="0.93"
+            app:layout_constraintStart_toEndOf="@+id/app_name"
+            app:layout_constraintTop_toTopOf="@+id/app_name" />
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:id="@+id/searchView_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mt_speechMode="true"
+            app:mt_roundedSearchBarEnabled="true"
+            app:mt_placeholder="@string/search"
+            app:mt_maxSuggestionsCount="5"
+            app:mt_searchIconDrawable="@drawable/icon_search"
+            app:mt_searchIconTint="@color/black"
+            app:mt_hint="@string/search"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ctm_background_search_view"
+            app:layout_constraintBottom_toBottomOf="@+id/clayout_home_top"
+            app:layout_constraintEnd_toEndOf="@+id/clayout_home_top"
+            app:layout_constraintStart_toStartOf="@+id/clayout_home_top"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_8sdp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_catageory"
+                        android:contentDescription="@string/category" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="@string/all_categories"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/_7ssp"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/category2_iv"
+                        android:layout_width="@dimen/_31sdp"
+                        android:layout_height="@dimen/_31sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_discount_hm"
+                        android:contentDescription="@string/category" />
+
+                    <TextView
+                        android:id="@+id/category2_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="@string/discount"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/_7ssp"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/category3_iv"
+                        android:layout_width="@dimen/_31sdp"
+                        android:layout_height="@dimen/_31sdp"
+                        android:src="@drawable/img_mobile"
+                        android:scaleType="centerCrop"/>
+
+
+                    <TextView
+                        android:id="@+id/category3_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="@string/mobile"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/_7ssp"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/category4_iv"
+                        android:layout_width="@dimen/_31sdp"
+                        android:layout_height="@dimen/_31sdp"
+                        app:civ_border_width="1dp"
+                        android:src="@drawable/img_fashion"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/category4_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="@string/fashion"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/_7ssp"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/category5_iv"
+                        android:layout_width="@dimen/_31sdp"
+                        android:layout_height="@dimen/_31sdp"
+                        android:src="@drawable/img_grocery"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/category5_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="@string/grocery"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/_7ssp"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                android:id="@+id/banner_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                app:autoPlay="true"
+                app:showCaption="false"
+                app:showNavigationButtons="false"
+                app:imageScaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                android:contentDescription="@string/banners" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/banner_container">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recylerView_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:background="@color/cardview_shadow_start_color"
+                    android:padding="@dimen/_30sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="@string/recommended_item"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_25ssp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recylerView_home2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="114dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

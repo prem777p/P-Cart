@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.initial_Screen.Login_Frag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/login_background_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_login_img"
+        android:contentDescription="@string/discription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="@color/white"
+        android:textSize="@dimen/welcome_txt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/login_background_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/login_background_iv"
+        app:layout_constraintTop_toTopOf="@+id/login_background_iv"
+        app:layout_constraintVertical_bias="0.32999998" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_in_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/button_customize"
+        android:minWidth="@dimen/minWeidth"
+        android:text="@string/sign_in"
+        android:textColor="@color/SplashScreen"
+        android:textSize="@dimen/sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_background_iv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_up_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_customize_singup"
+        android:minWidth="@dimen/minWeidth"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sign_up"
+        app:layout_constraintEnd_toEndOf="@+id/sign_in_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sign_in_btn"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_btn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/or"
+        android:textColor="@color/login_text_or"
+        android:textSize="@dimen/Or_txt"
+        app:layout_constraintEnd_toEndOf="@+id/login_SM_tv"
+        app:layout_constraintStart_toStartOf="@+id/login_SM_tv"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_btn" />
+
+    <TextView
+        android:id="@+id/login_SM_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_with_social_media"
+        android:textColor="@color/login_with_smedia_tv"
+        android:textSize="@dimen/Already_have_account_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up_btn"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_btn"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_btn"
+        app:layout_constraintVertical_bias="0.407" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_SM_tv">
+
+        <ImageButton
+            android:id="@+id/twitter_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/Twitter_icon"
+            android:src="@drawable/icon_twiter" />
+
+        <ImageButton
+            android:id="@+id/google_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/google_icon"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/icon_google" />
+
+        <ImageButton
+            android:id="@+id/fb_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/facebook_logo"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/icon_facebook" />
+
+        <ImageButton
+            android:id="@+id/insta_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/instagram_logo"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/icon_insta" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
